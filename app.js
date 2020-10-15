@@ -3,16 +3,9 @@ const obtenerInfoMedicamento = require("./library");
 
 obtenerInfoMedicamento("3138%20ESP").then((info) => {
     console.log("Laboratorio: "+info.labtitular);
-    return info;
-}).then((info)=>{
     console.log("Medicamento: "+info.nombre);
-    return info;
-}).then((info)=>{
     console.log("Nro Registro: "+info.nregistro);
-    return info;
-}).then((info)=>{
     console.log("Principios Activos: "+info.pactivos);
-    return info;
 }).catch((err) => {
     console.log(err.message);
 });
